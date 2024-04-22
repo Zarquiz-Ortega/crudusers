@@ -1,0 +1,49 @@
+.alert__back{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(138, 137, 137, 0.467);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.alert__back.active{
+    display: flex;
+}
+
+.alert{
+    position: relative;
+    height: 150px;
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.alert__close{
+    padding: 2px ;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #ffffff00;
+    color: black ;
+}
+
+.alert__close:hover{
+    color: red;
+}
+
+.alert__btn{
+    background-color: mediumslateblue;
+    color: white;
+}
